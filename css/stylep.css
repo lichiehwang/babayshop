@@ -479,6 +479,9 @@ padding-bottom: 15%;}
       }
 
         @media screen and (max-width: 600px) {
+             #content{margin-top: -15%;
+            }
+            .logo{padding:10px}
             html{
                 font-size: 12px;
             }
