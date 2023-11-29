@@ -303,6 +303,9 @@ font-size: 1.1rem;
                 max-width:90vw; }
         }
         @media screen and (max-width: 600px) {
+             #content{margin-top: -15%;
+            }
+            .logo{padding:10px}
             html{
                 font-size: 12px;
             }
