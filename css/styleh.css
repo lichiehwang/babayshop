@@ -1,0 +1,373 @@
+*{
+    padding:0;
+    margin:0;
+}
+    
+html{
+        background-color: #FFF9EC;
+        font-family: 'Coiny',"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+        font-size: 16px;
+        overflow-x: hidden;
+        letter-spacing: 0.05rem;
+        line-height: 1.5;
+    }
+    
+/* header */
+#header{
+    position:relative;
+    background-image: url(../img/howheader.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo{
+  padding:30px;
+  display: inline-block;
+  }
+  
+  .logo object{
+    pointer-events: none;
+  max-width: 15vw;
+  }
+#header h1{
+    font-size: 3rem;
+    color:#DEB283;
+    text-align: center;
+  
+   line-height: 1;
+}
+#header h2{
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size:1.5rem;
+    color:#62300C;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20%;
+}
+.social{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top:65%;
+    right:5%;
+    gap:15px
+}
+ /*　ハンバーガーボタン　*/
+ .hamburger {
+    display : block;
+    position: absolute;
+    z-index : 15;
+    right :0px;
+    top   : 0px;
+    width : 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    background-color:#DD8F69;
+    
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    top:10px;
+    left: 10px;
+    background : #ffffff;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 17px;
+    left: 8px;
+    background :#fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 17px;
+    background :#fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  .hamburger.active{
+    background-color:transparent;
+  }
+  
+  nav.globalMenuSp {
+    position: absolute;
+    z-index : 14;
+    top  : 0;
+    right : 0;
+    color: #fff;
+    background:rgba(221,143,105,0.97);
+   
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease, visibility .5s ease;
+  }
+  
+  nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 50px;
+    width: 100%;
+  }
+  
+  nav.globalMenuSp ul li {
+    font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 0.9rem;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .3s all;
+    line-height: 1;
+    font-weight: bold;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+  nav.globalMenuSp ul li:hover{
+    background :#DEB283;
+   
+  }
+  
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1.5em 0;
+    text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+    visibility: visible;
+  }
+
+/* content */
+#content{
+    background-image: url(../img/how\ to\ header.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-top: -10%;
+    z-index: 2;
+    position:relative;
+  
+}
+.flexc{
+    max-width:70vw; 
+   margin:0 auto;
+   padding-top:10% ;
+   padding-bottom:10% ;
+
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+}
+.flexc img{
+    max-width:70vw; 
+    margin:0 auto; 
+}
+.flexc2{display:none}
+
+/* notice */
+#notice{
+    background-image: url(../img/howb.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.flex{
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width:55vw;
+    flex-wrap:nowrap;
+color:#62300C;
+font-size: 1.1rem;
+   margin:0 auto;
+   gap:50px;
+}
+
+.flexn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:80px;
+    padding-top:20% ;
+   padding-bottom:15% ;
+}
+.cb1{
+    position: absolute;
+    top:10%;
+    left:0
+}
+.cb2{
+    position: absolute;
+    bottom:0;
+   right:0
+}
+.highlight {
+    text-decoration: underline; /* 下線 */
+    text-decoration-thickness: 0.5em; /* 線の太さ */
+    text-decoration-color:#F6DFB1; /* 線の色 */
+    text-underline-offset: -0.2em; /* 線の位置。テキストに重なるようにやや上部にする */
+    text-decoration-skip-ink: none; /* 下線と文字列が重なる部分でも下線が省略されない（線が途切れない） */
+  }
+/* footer */
+#footer{
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    position:relative;
+    background-color: #DEB283;
+    z-index: 5;
+  }
+  .footerimg{
+    position:absolute;
+    top:-50px;
+    right:0;
+    overflow-x: hidden;
+  }
+  
+  .footerflex{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding:30px
+  }
+  
+  .footernav li{
+    display: inline-block;
+    padding:25px;
+    color:white;
+    font-weight: bold;
+    font-size: .9rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .footernav li:hover{
+   color:rgba(98,48,12,0.5)}
+  .social2{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+  }
+  .footerlogo{
+    display: inline-block;
+  }
+  .footerlogo object{
+    pointer-events: none;
+  }
+ 
+  @media screen and (max-width: 1050px) {
+    html{
+        font-size: 14px;
+    }
+    .footerflex{flex-direction: column;}
+  
+  .footernav li {
+    display: block;
+  padding:10px}
+  .footerflex{
+    gap:20px;}
+    .hamburger {
+        position: fixed;}
+        nav.globalMenuSp {
+          position: fixed;}
+          .flex{
+                       
+            max-width:80vw;
+            gap:30px;
+        
+        }
+        .flexc{
+            max-width:90vw;
+        }
+            .flexc img{
+                max-width:90vw; }
+        }
+        @media screen and (max-width: 600px) {
+            html{
+                font-size: 12px;
+            }
+           
+            .flexc2{
+              max-width:100vw;
+             margin:0 auto;
+             padding-top:10% ;
+             padding-bottom:10% ;
+          
+              display: flex;
+              flex-direction: column;
+              gap:50px;
+          }
+          .flexc2 img{
+            max-width:100vw;
+              margin:0 auto; 
+          }
+            .flexc{display:none;}
+               
+               
+                    .flex{
+                       
+                        max-width:90vw;
+                        gap:30px;
+                    }
+                    .flexn{
+                      padding-top: 25%;
+                      padding-bottom:20% ;
+                    }
+                .flex img{
+                    width:80px;
+                }
+            .cb1{
+                display: none;
+            }
+            .cb2{
+                display: none;
+            }
+            .social{
+              display:none;
+            }
+           }
+            .fadeUp{
+                animation-name:fadeUpAnime;
+                animation-duration:1.5s;
+                animation-fill-mode:forwards;
+                opacity:0;
+                }
+                
+                @keyframes fadeUpAnime{
+                  from {
+                    opacity: 0;
+                  transform: translateY(100px);
+                  }
+                
+                  to {
+                    opacity: 1;
+                  transform: translateY(0);
+                  }
+                }
+                
+                
+                /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+                 
+                .fadeUpTrigger{
+                    opacity: 0;
+                }

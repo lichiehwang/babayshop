@@ -1,0 +1,519 @@
+*{
+    padding:0;
+    margin:0;
+}
+    
+html{
+        background-color: #FFF;
+        font-family: 'Coiny',"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+        font-size: 16px;
+        overflow-x: hidden;
+        letter-spacing: 0.05rem;
+        line-height: 1.5;
+    }
+    
+/* header */
+#header{
+    position:relative;
+    background-image: url(../img/productheader.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo{
+  padding:30px;
+  display: inline-block;
+  }
+  
+  .logo object{
+    pointer-events: none;
+  max-width: 15vw;
+  }
+#header h1{
+    font-size: 3rem;
+    color:#DEB283;
+    text-align: center;
+ 
+   line-height: 1;
+}
+#header h2{
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size:1.5rem;
+    color:#62300C;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20%;
+}
+.social{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top:65%;
+    right:5%;
+    gap:15px
+}
+ /*　ハンバーガーボタン　*/
+ .hamburger {
+    display : block;
+    position: absolute;
+    z-index : 15;
+    right :0px;
+    top   : 0px;
+    width : 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    background-color:#DD8F69;
+    
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    top:10px;
+    left: 10px;
+    background : #ffffff;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 17px;
+    left: 8px;
+    background :#fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 17px;
+    background :#fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  .hamburger.active{
+    background-color:transparent;
+  }
+  
+  nav.globalMenuSp {
+    position: absolute;
+    z-index : 14;
+    top  : 0;
+    right : 0;
+    color: #fff;
+    background:rgba(221,143,105,0.97);
+   
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease, visibility .5s ease;
+  }
+  
+  nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 50px;
+    width: 100%;
+  }
+  
+  nav.globalMenuSp ul li {
+    font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 0.9rem;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .3s all;
+    line-height: 1;
+    font-weight: bold;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+  nav.globalMenuSp ul li:hover{
+    background :#DEB283;
+   
+  }
+  
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1.5em 0;
+    text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+    visibility: visible;
+  }
+
+/* content */
+#content{
+    background-image: url(../img/productmiddle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -10%;
+    z-index: 2;
+    position:relative;
+}
+    .flexp{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding:5%;
+        justify-content: space-between;
+        align-items: center;
+    gap:30px;
+    margin-bottom: 5%;
+padding-top: 15%;
+padding-bottom: 15%;}
+        
+      .flex{
+
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      a.btn_02 {
+        display: block;
+        text-align: center;
+        letter-spacing: 0.05rem;
+        text-decoration: none;
+        width: 200px;
+       
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        border: 1px solid #DD8F69;
+        color: #DD8F69;
+        border-radius: 100vh;
+        transition: 0.5s;
+      border-bottom: solid 3px #BD7A59;
+    }
+    a.btn_02:hover {
+    color:white;
+      background: #DD8F69;
+    }
+    a.btn_02:active {
+      /*ボタンを押したとき*/
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);/*下に動く*/
+      border-bottom: none;/*線を消す*/
+    }
+    a.btn_03 {
+        display: block;
+        text-align: center;
+        letter-spacing: 0.05rem;
+        text-decoration: none;
+        width: 200px;
+       
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        border: 1px solid #DEB283;
+        color: #DEB283;
+        border-radius: 100vh;
+        transition: 0.5s;
+      border-bottom: solid 3px #C8A177;;  
+    }
+    a.btn_03:hover {
+        color: #fff;
+        background: #DEB283;
+    }
+    a.btn_03:active {
+      /*ボタンを押したとき*/
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);/*下に動く*/
+      border-bottom: none;/*線を消す*/
+    }
+    a.btn_04 {
+        display: block;
+        text-align: center;
+        letter-spacing: 0.05rem;
+        text-decoration: none;
+        width: 200px;
+       
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        border: 1px solid #62300C;
+        color: #62300C;
+        border-radius: 100vh;
+        transition: 0.5s;
+      border-bottom: solid 3px #381C07;
+    }
+    
+    a.btn_04:hover {
+        color: #fff;
+        background: #62300C;
+    }
+    
+    a.btn_04:active {
+      /*ボタンを押したとき*/
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);/*下に動く*/
+      border-bottom: none;/*線を消す*/
+    }
+
+    .accordion {
+    
+        display: flex;
+        flex-direction: column;
+        margin: 1em 0 1.5em;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    }
+    
+    .accordion input[type="checkbox"] {
+        display: none;
+    }
+    
+    .accordion label {
+        cursor: pointer;
+        background-color: #F8E9E1;
+        padding: 10px;
+        margin: 0;
+        display: block;
+        font-weight: bold;
+        color: #DD8F69;
+        border-radius: 5px 5px 0px 0px;
+       text-align: center;
+    }
+    
+    .accordion .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color: #F8E9E1;
+        padding: 0 10px;
+        border-bottom: 1px solid #DD8F69;
+    }
+    
+    .accordion input[type="checkbox"]:checked ~ .content {
+        max-height: 100%;
+        padding: 10px 10px;
+    }
+    
+    .accordion label span {
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .accordion input[type="checkbox"]:checked ~ label span {
+        transform: rotate(180deg);
+        display: inline-block;
+    }
+    .accordion2 {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 0 1.5em;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    }
+    
+    .accordion2 input[type="checkbox"] {
+        display: none;
+    }
+    
+    .accordion2 label {
+        cursor: pointer;
+        background-color: #F9F2E9;
+        padding: 10px;
+        margin: 0;
+        display: block;
+        font-weight: bold;
+        color: #DEB283;
+        border-radius: 5px 5px 0px 0px;
+       text-align: center;
+    }
+    
+    .accordion2 .content2 {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color:  #F9F2E9;
+        padding: 0 10px;
+        border-bottom: 1px solid #DEB283;
+    }
+    
+    .accordion2 input[type="checkbox"]:checked ~ .content2 {
+        max-height: 100%;
+        padding: 10px 10px;
+    }
+    
+    .accordion2 label span {
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .accordion2 input[type="checkbox"]:checked ~ label span {
+        transform: rotate(180deg);
+        display: inline-block;
+    }
+    .accordion3 {
+        display: flex;
+        flex-direction: column;
+        margin: 1em 0 1.5em;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    }
+    
+    .accordion3 input[type="checkbox"] {
+        display: none;
+    }
+    
+    .accordion3 label {
+        cursor: pointer;
+        background-color: #E0D6CE;
+        padding: 10px;
+        margin: 0;
+        display: block;
+        font-weight: bold;
+        color: #62300C;
+        border-radius: 5px 5px 0px 0px;
+       text-align: center;
+    }
+    
+    .accordion3 .content3 {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color:  #E0D6CE;
+        padding: 0 10px;
+        border-bottom: 1px solid #62300C;
+    }
+    
+    .accordion3 input[type="checkbox"]:checked ~ .content3 {
+        max-height: 100%;
+        padding: 10px 10px;
+    }
+    
+    .accordion3 label span {
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    .accordion3 input[type="checkbox"]:checked ~ label span {
+        transform: rotate(180deg);
+        display: inline-block;
+    }
+    
+/* footer */
+#footer{
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    position:relative;
+    background-color: #DEB283;
+    z-index: 5;
+  }
+  .footerimg{
+    position:absolute;
+    top:-50px;
+    right:0;
+    overflow-x: hidden;
+  }
+  
+  .footerflex{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding:30px
+  }
+  
+  .footernav li{
+    display: inline-block;
+    padding:25px;
+    color:white;
+    font-weight: bold;
+    font-size: .9rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .footernav li:hover{
+   color:rgba(98,48,12,0.5)}
+  .social2{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+  }
+  .footerlogo{
+    display: inline-block;
+  }
+  .footerlogo object{
+    pointer-events: none;
+  }
+ 
+  @media screen and (max-width: 1050px) {
+    html{
+        font-size: 14px;
+    }
+    .footerflex{flex-direction: column;}
+  
+  .footernav li {
+    display: block;
+  padding:10px}
+  .footerflex{
+    gap:20px;}
+    .hamburger {
+        position: fixed;}
+        nav.globalMenuSp {
+          position: fixed;}
+        
+        }
+        @media screen and (max-width: 830px) { 
+            .flexp{
+            display: flex;
+            flex-direction:column;
+            padding:10%;
+            padding-bottom: 20%;
+            justify-content: center;
+            align-items: center;
+        gap:80px}
+      }
+
+        @media screen and (max-width: 600px) {
+            html{
+                font-size: 12px;
+            }
+           
+            .flexp{margin-bottom: 10%;}
+            .social{
+              display:none;
+            }
+        }
+        /* fadeUp */
+
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+   
+  .fadeUpTrigger{
+      opacity: 0;
+  }
+
+  

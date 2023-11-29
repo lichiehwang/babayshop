@@ -1,0 +1,307 @@
+*{
+    padding:0;
+    margin:0;
+}
+    
+html{
+        background-color: #FFF9EC;
+        font-family: 'Coiny',"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+        font-size: 16px;
+        overflow-x: hidden;
+        letter-spacing: 0.05rem;
+        line-height: 1.7;
+    }
+    
+/* header */
+#header{
+    position:relative;
+   
+    background-image: url(../img/blogheader.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.logo{
+  padding:30px;
+  display: inline-block;
+  }
+  
+  .logo object{
+    pointer-events: none;
+  max-width: 15vw;
+  }
+#header h1{
+    font-size: 3rem;
+    color:#DEB283;
+    text-align: center;
+  
+   line-height: 1;
+}
+#header h2{
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size:1.5rem;
+    color:#62300C;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20%;
+}
+.social{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top:65%;
+    right:5%;
+    gap:15px
+}
+ /*　ハンバーガーボタン　*/
+ .hamburger {
+    display : block;
+    position: absolute;
+    z-index : 15;
+    right :0px;
+    top   : 0px;
+    width : 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    background-color:#DD8F69;
+    
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    top:10px;
+    left: 10px;
+    background : #ffffff;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
+    top : 17px;
+    left: 8px;
+    background :#fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+  
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 17px;
+    background :#fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+  .hamburger.active{
+    background-color:transparent;
+  }
+  
+  nav.globalMenuSp {
+    position: absolute;
+    z-index : 14;
+    top  : 0;
+    right : 0;
+    color: #fff;
+    background:rgba(221,143,105,0.97);
+   
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease, visibility .5s ease;
+  }
+  
+  nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 50px;
+    width: 100%;
+  }
+  
+  nav.globalMenuSp ul li {
+    font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 0.9rem;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .3s all;
+    line-height: 1;
+    font-weight: bold;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+  nav.globalMenuSp ul li:hover{
+    background :#DEB283;
+   
+  }
+  
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1.5em 0;
+    text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+    visibility: visible;
+  }
+
+
+  /* content */
+  #content{
+    background-image: url(../img/blogmiddle.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -10%;
+    z-index: 2;
+    position:relative
+  }
+#content img{
+    padding-bottom: 50px;
+    max-width:50vw;
+}
+  #content p{
+    font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 1.25rem;
+    padding-bottom: 20px;
+    padding:10px;
+    background-color: rgba(255, 249, 236,.5);
+  }
+  .article{
+    max-width:55vw;
+    color:#62300C;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  /* footer */
+  #footer{
+    font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    position:relative;
+    background-color: #DEB283;
+    z-index: 5;
+  }
+  .footerimg{
+    position:absolute;
+    top:-50px;
+    right:0;
+    overflow-x: hidden;
+  }
+  
+  .footerflex{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding:30px
+  }
+  
+  .footernav li{
+    display: inline-block;
+    padding:25px;
+    color:white;
+    font-weight: bold;
+    font-size: .9rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .footernav li:hover{
+   color:rgba(98,48,12,0.5)}
+  .social2{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+  }
+  .footerlogo{
+    display: inline-block;
+  }
+  .footerlogo object{
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 1050px) {
+    html{
+        font-size: 14px;
+    }
+    .footerflex{flex-direction: column;}
+  
+  .footernav li {
+    display: block;
+  padding:10px}
+  .footerflex{
+    gap:20px;}
+    .hamburger {
+        position: fixed;}
+        nav.globalMenuSp {
+          position: fixed;}
+        
+        }
+    
+        @media screen and (max-width: 600px) {
+            html{
+                font-size: 12px;
+            }
+            .article{
+                max-width:80vw;
+              padding-left:0;
+            margin:0 auto;}
+                #content img{
+                    max-width:80vw;
+                    padding-bottom: 20px;
+                }
+                
+                #content p{
+                    padding-bottom: 10px;
+                  }
+                
+                .social{
+                  display:none;
+                }  
+        }
+
+            /* fadeUp */
+
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  
+  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+   
+  .fadeUpTrigger{
+      opacity: 0;
+  }
