@@ -412,6 +412,9 @@ max-width: 50vw;
             
         }
         @media screen and (max-width: 600px) {
+             #content{margin-top: -15%;
+            }
+            .logo{padding:10px}
             html{
                 font-size: 12px;
             }
