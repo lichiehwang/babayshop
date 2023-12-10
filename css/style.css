@@ -492,6 +492,7 @@ a.btn_01:active {
   flex-wrap: wrap;
   max-width: 350px;
   gap:30px;
+ justify-content: center;	
  
 }
 .ar2{
