@@ -708,6 +708,20 @@ a.btn_04:active {
   /* スライドよりも前面にする */
   z-index: 3;
 }
+  .scroll_button::after{
+    position: absolute;
+    top: 0;
+    bottom: 10px;
+    left: -8px;
+    margin: auto;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 3px solid #62300C;   /* 好みで色を変えてください */  
+    border-radius: 50%;
+   
+    z-index: 1;
+}  
 /* ホバー時にボタンを強調 */
 .scroll_button:hover {
   opacity: 1;
