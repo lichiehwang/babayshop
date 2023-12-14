@@ -1088,7 +1088,7 @@
   }
   .modal-close{
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 10px;
     text-decoration: none;
   }
@@ -1151,7 +1151,7 @@
   }
   .modal-close2{
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 10px;
     text-decoration: none;
   }
@@ -1215,7 +1215,7 @@
   }
   .modal-close3{
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 10px;
     text-decoration: none;
   }
