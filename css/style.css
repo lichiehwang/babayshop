@@ -969,7 +969,11 @@
     .c2{
       display:none;
     }
-    #content {padding:50px;}
+    .aleft{
+      padding-left:50px;
+      padding-right: 50px;
+
+    }
     #content h1{
       padding-top: 150px;
       margin-top: 0px;
@@ -994,7 +998,7 @@
     }
     #apple, #apple2{
       gap:15px;
-      padding-bottom: 100px;
+      padding-bottom: 150px;
     }
     .slide4 {
       width:200px}
@@ -1010,23 +1014,28 @@
    }
    @media screen and (max-width: 500px) {
     .modal-content img{
-     width: 390px; 
+     width: 350px; 
     } 
    .modal-open{
     margin: 10px;
   }
   .modal-content2 img{
-    width: 390px; 
+    width: 350px; 
    } 
   .modal-open2{
    margin: 10px;
   }
   .modal-content3 img{
-    width: 390px; 
+    width: 350px; 
    } 
   .modal-open3{
    margin: 10px;
-  }}
+  }
+  .bottom{
+   display:none;
+    
+  }
+}
   
   .modal-open{
     margin: 5px;
@@ -1080,7 +1089,7 @@
     position: relative;
   }
   .modal-content{
-  
+    z-index: 10;
     text-align: center;
   }
   .modal-content img{
@@ -1148,6 +1157,7 @@
   }
   .modal-content2{
     text-align: center;
+    z-index: 10;
   }
   .modal-close2{
     position: absolute;
@@ -1212,6 +1222,7 @@
   }
   .modal-content3{
    text-align: center;
+   z-index: 10;
   }
   .modal-close3{
     position: absolute;
