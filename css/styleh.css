@@ -187,7 +187,7 @@ html{
 
 /* notice */
 #notice{
-    background-image: url(../img/howb.svg);
+   background-image: url(../img/productmiddle.svg);
     background-size:cover;
     background-repeat: no-repeat;
     position: relative;
