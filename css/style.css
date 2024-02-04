@@ -393,24 +393,28 @@
     border-bottom: none;/*線を消す*/
   }
 .container{
+    margin:0 auto;
     text-align: center;
      margin-bottom:250px;
      }
     
      .test{
     max-width: 100%;
+    
      }
-     .video2{ 
+     .video2{
+      
       margin-bottom: 15px;
      }
      .video2 img{
       max-width: 30%;
      }
      iframe {
-     width: 70%;
-       height: auto;
-       aspect-ratio: 16 / 9;
-     }
+      width: 70%;
+      height: auto;
+      -webkit-aspect-ratio: 16 / 9; /* Safari prefix */
+      aspect-ratio: 16 / 9;
+  }
   /* header */
   /* content */
   #content{
