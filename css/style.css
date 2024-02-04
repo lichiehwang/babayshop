@@ -201,7 +201,7 @@
   }
   .c4{
     position:absolute;
-    bottom: 0;
+    bottom: -300px;
     max-width: 10vw;
   
   z-index: -10;
