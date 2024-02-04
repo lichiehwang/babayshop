@@ -402,14 +402,12 @@
     max-width: 100%;
     
      }
-     .video2{
-      
-      margin-bottom: 15px;
-     }
+    
      .video2 img{
       max-width: 30%;
      }
      iframe {
+       border-radius: 15px;
       width: 55%;
       height: auto;
       -webkit-aspect-ratio: 16 / 9; /* Safari prefix */
