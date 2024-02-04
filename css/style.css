@@ -410,7 +410,7 @@
       max-width: 30%;
      }
      iframe {
-      width: 65%;
+      width: 55%;
       height: auto;
       -webkit-aspect-ratio: 16 / 9; /* Safari prefix */
       aspect-ratio: 16 / 9;
