@@ -407,6 +407,7 @@
       max-width: 30%;
      }
      iframe {
+       -webkit-border-radius: 15px;
        border-radius: 15px;
       width: 55%;
       height: auto;
