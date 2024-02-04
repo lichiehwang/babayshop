@@ -50,55 +50,7 @@
     opacity: 1;
     visibility: visible;
   }
-  /* .loading {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: 20;
-      background-color: #FFF9EC;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      animation: fadeOut 1.5s 2.5s forwards;
-    }
-    
-    @keyframes fadeOut {
-      0% {
-        opacity: 1;
-      }
-    
-      100% {
-        opacity: 0;
-        visibility: hidden;
-      }
-    }
-    
-    .loading__logo {
-      opacity: 0;
-      animation: logo_fade 3s 0.5s forwards;
-      max-width:30vw;
-    }
-    
-    @keyframes logo_fade {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-    
-      60% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    
-      100% {
-        opacity: 0;
-      }
-    } */
-  
-    /* loading */
-  
+
     /* header */
     #header{
   overflow: hidden;
@@ -440,6 +392,27 @@
     transform: translateY(4px);/*下に動く*/
     border-bottom: none;/*線を消す*/
   }
+ .container{
+    text-align: center;
+     margin-bottom:250px;
+     }
+    
+     .test{
+    max-width: 100%;
+    
+     }
+     .video2{
+      
+      margin-bottom: 15px;
+     }
+     .video2 img{
+      max-width: 30%;
+     }
+     iframe {
+     width: 70%;
+       height: auto;
+       aspect-ratio: 16 / 9;
+     }
   /* header */
   /* content */
   #content{
@@ -888,6 +861,8 @@
      align-items: center;
       max-width: 300px;
     }
+       iframe {
+        width: 80%;}
     #apple{
       flex-direction: column;
       align-items: center;
@@ -1002,9 +977,7 @@
     }
     .slide4 {
       width:200px}
-    /* .modal-open,.modal-open2,.modal-open3{
-      display:none;
-    } */
+   
     .aright{
       display:none;
     }
