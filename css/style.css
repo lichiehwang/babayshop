@@ -511,7 +511,8 @@
     align-items: flex-end;
     gap:80px;
   padding-bottom:150px;
-   padding-left: 200px;
+        justify-content: center;
+
   }
   #apple2{
     display:flex;
@@ -519,7 +520,7 @@
     align-items: flex-end;
     gap:80px;
   padding-bottom:150px;
-   padding-left: 200px;
+      justify-content: center;
   }
   
   a.btn_03 {
