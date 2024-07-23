@@ -59,6 +59,7 @@
   
    /*　ハンバーガーボタン　*/
   .hamburger {
+    border-radius: 15%;
     display : block;
     position: absolute;
     z-index : 15;
