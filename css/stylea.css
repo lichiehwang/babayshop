@@ -218,7 +218,7 @@ a.btn_04:active {
   max-width: 40vw;
 }
 .message{
-    height: 80vh;
+    height: 60vh;
     display:flex;
     flex-direction: column;
     max-width: 40vw;
