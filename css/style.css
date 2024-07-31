@@ -210,7 +210,7 @@
   }
   .slogan{
     position: absolute;
-    top:60vh;
+    top:70vh;
     z-index: 9;
     left:50px;
   }
@@ -220,7 +220,7 @@
     /* border:#DEB283 solid 5px; */
     border-radius: 30px;
     width: 80vw;
-    max-height:60vh;
+    max-height:70vh;
     position: relative;
     overflow: hidden; /* はみ出したスライドを隠す */
     margin:10px auto;
