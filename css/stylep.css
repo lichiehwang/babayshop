@@ -175,10 +175,10 @@ html{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding:5%;
-        justify-content: space-between;
+     
+        justify-content: center;
         align-items: center;
-    gap:30px;
+    gap:100px;
     margin-bottom: 5%;
 padding-top: 15%;
 padding-bottom: 15%;}
