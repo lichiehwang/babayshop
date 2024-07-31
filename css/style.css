@@ -433,15 +433,15 @@
   }
   
   .top{
+   
     position:absolute;
     top:-70px;
-    right:0;
     overflow-x: hidden;
   }
   .bottom{
     position:absolute;
     bottom:-70px;
-    right:0; 
+
     overflow-x: hidden;
     
   }
