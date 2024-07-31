@@ -164,8 +164,8 @@ max-width: 15vw;
 /* content */
 #content{
     overflow: hidden;
-  background-image: url(../img/how\ to\ header2.svg);
-  background-size: contain;
+  background-image: url(../img/about2.svg);
+  background-size: 100vw;
   background-repeat: no-repeat;
   margin-top: -10%;
   z-index: 2;
