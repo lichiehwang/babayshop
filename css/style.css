@@ -441,7 +441,7 @@
   .bottom{
     position:absolute;
     bottom:-70px;
-
+z-index: -2;
     overflow-x: hidden;
     
   }
