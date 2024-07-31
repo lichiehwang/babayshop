@@ -210,7 +210,7 @@ font-size: 1.1rem;
 .flexn{
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     gap:80px;
     padding-top:20% ;
    padding-bottom:15% ;
