@@ -777,20 +777,19 @@ z-index: -2;
   }
   
   /* footer */
-  #footer{
-     overflow: hidden;
-  background-image: url(../img/footer2.svg);
-  background-size: 100vw;
-  background-repeat: no-repeat;
-  margin-top: -10%;
-  z-index: 2;
-  position:relative;
-
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+#footer{
+  font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
     position:relative;
     background-color: #DEB283;
+    z-index: 5;
+  
   }
- 
+  .footerimg{
+    position:absolute;
+    top:-50px;
+    right:0;
+    overflow-x: hidden;
+  }
   
   .footerflex{
     display:flex;
@@ -805,7 +804,7 @@ z-index: -2;
     padding:25px;
     color:white;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: .9rem;
     line-height: 1.2;
     text-align: center;
   }
