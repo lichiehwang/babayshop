@@ -86,13 +86,13 @@
     transition        : 0.3s ease-in-out;
   }
   .hamburger span:nth-child(1) {
-    top: 20px;
+    top: 15px;
   }
   .hamburger span:nth-child(2) {
-    top: 30px;
+    top: 25px;
   }
   .hamburger span:nth-child(3) {
-    top: 40px;
+    top: 35px;
   }
   /* ナビ開いてる時のボタン */
   .hamburger.active span:nth-child(1) {
