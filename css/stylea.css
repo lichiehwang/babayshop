@@ -164,13 +164,12 @@ max-width: 15vw;
 /* content */
 #content{
     overflow: hidden;
-  background-image: url(../img/how\ to\ header.svg);
+  background-image: url(../img/how\ to\ header2.svg);
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: -10%;
   z-index: 2;
   position:relative;
-height:1300px;
 font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif; 
 }
 
