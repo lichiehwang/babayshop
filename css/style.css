@@ -219,7 +219,7 @@
   .slide-wrapper {
     /* border:#DEB283 solid 5px; */
     border-radius: 30px;
-    width: 80vw;
+    width: 70vw;
     max-height:70vh;
     position: relative;
     overflow: hidden; /* はみ出したスライドを隠す */
