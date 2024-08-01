@@ -1211,8 +1211,5 @@
     right: 10px;
     text-decoration: none;
   }
-  @media screen and (min-width: 1800px){
-    .top{display:none;}
-    .bottom{display:none;}
-  }
+  
   
