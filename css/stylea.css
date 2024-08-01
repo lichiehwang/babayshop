@@ -219,17 +219,16 @@ a.btn_04:active {
 }
 .message{
     height: 60vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    max-width: 40vw;
-    gap:30px;
+    max-width: 800px;
+    gap: 30px;
     align-items: center;
-    color:#62300C;
+    color: #62300C;
     font-size: 1.2rem;
-   float:right;
-  justify-content: center;
-   padding-right:5%
-  
+    float: right;
+    justify-content: center;
+    padding-right: 7%;
    
    
 }
