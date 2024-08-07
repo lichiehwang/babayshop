@@ -333,9 +333,10 @@ max-width: 50vw;
           }
        
           .message{
+               margin:10vh auto;
             display:flex;
             flex-direction: column;
-            max-width: 40vw;
+            max-width: 50vw;
             gap:30px;
             align-items: center;
             color:#62300C;
@@ -375,7 +376,7 @@ max-width: 50vw;
       
     
           .message{
-            max-width: 60vw;
+            max-width: 70vw;
       }
 
        
