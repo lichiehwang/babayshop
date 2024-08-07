@@ -203,7 +203,8 @@ a.btn_04:active {
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
-
+.message img{
+    max-width:70vw;}
 
 .message{
    margin:20vh auto;
@@ -336,7 +337,7 @@ max-width: 50vw;
                margin:10vh auto;
             display:flex;
             flex-direction: column;
-            max-width: 50vw;
+            max-width: 70vw;
             gap:30px;
             align-items: center;
             color:#62300C;
