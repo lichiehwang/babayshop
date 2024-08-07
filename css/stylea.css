@@ -173,14 +173,7 @@ max-width: 15vw;
 font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif; 
 }
 
-.c3{
-    position:absolute;
-    z-index: -10;
-    max-width: 85vw;
-    top:250px;
-    right:-20px;
-    overflow-x: hidden;
-  }
+
 
   a.btn_04 {
     font-family: 'Coiny';
@@ -210,15 +203,10 @@ a.btn_04:active {
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
-.apic, .bpic, .cpic{
-  display:none;
-}
 
-.message img{
-  max-width: 40vw;
-}
+
 .message{
-   margin:10vh auto;
+   margin:20vh auto;
     display: flex;
     flex-direction: column;
     max-width: 800px;
@@ -229,7 +217,6 @@ a.btn_04:active {
   
     justify-content: center;
   
-   
    
 }
 /* notice */
@@ -344,9 +331,7 @@ max-width: 50vw;
           .aboutflex img{
             max-width: 50vw; 
           }
-          .c3{
-            display:none;
-          }
+       
           .message{
             display:flex;
             flex-direction: column;
@@ -356,34 +341,7 @@ max-width: 50vw;
             color:#62300C;
             font-size: 1.2rem;
         }
-        .apic{
-          display:block;
-          position:absolute;
-          top:25%;
-          right:5%;
-         
-        }
-        .apic object{ max-width: 120px;}
-       
-        .cpic{
-          display:block;
-          position:absolute;
-          top:5%;
-          left:3%;
-        }
-        .cpic object{
-          max-width: 180px;
-        }
-        .bpic {
-          display:block;
-          position:absolute;
-          bottom:3%;
-          left:10%;
-          z-index: -5;
-        }
-       .bpic object{
-        max-width: 200px;
-       }  
+      
         
        
         #content{
@@ -418,21 +376,7 @@ max-width: 50vw;
                 font-size: 12px;
             }
             
-            .apic object{
-
-              max-width: 80px;
-          }
-          .apic{
-           
-            right:3%
-          }
-          .bpic object{
-            max-width: 100px;
-            
-          }
-          .cpic object{
-            max-width: 90px;
-          }
+      
           #content{
            height:700px;
           }
@@ -441,9 +385,7 @@ max-width: 50vw;
        
       }
 
-          .message img{
-            display:none;
-          }
+       
           .cb1{
             display:none;
           }
