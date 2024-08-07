@@ -355,9 +355,6 @@ max-width: 50vw;
             align-items: center;
             color:#62300C;
             font-size: 1.2rem;
-         position:absolute;
-         left:35%;
-         top:-13vh;
         }
         .apic{
           display:block;
@@ -441,7 +438,6 @@ max-width: 50vw;
           }
           .message{
             max-width: 60vw;
-       left:25%;
        
       }
 
