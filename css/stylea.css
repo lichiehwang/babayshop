@@ -203,8 +203,7 @@ a.btn_04:active {
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
-.message img{
-    max-width:70vw;}
+
 
 .message{
    margin:20vh auto;
@@ -343,7 +342,8 @@ max-width: 50vw;
             color:#62300C;
             font-size: 1.2rem;
         }
-      
+      .message img{
+    max-width:70vw;}
         
        
         .aboutflex{
@@ -374,11 +374,6 @@ max-width: 50vw;
                 font-size: 12px;
             }
             
-      
-    
-          .message{
-            max-width: 70vw;
-      }
 
        
           .cb1{
