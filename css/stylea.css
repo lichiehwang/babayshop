@@ -218,7 +218,7 @@ a.btn_04:active {
   max-width: 40vw;
 }
 .message{
-    height: 60vh;
+   margin:10vh auto;
     display: flex;
     flex-direction: column;
     max-width: 800px;
@@ -226,9 +226,9 @@ a.btn_04:active {
     align-items: center;
     color: #62300C;
     font-size: 1.2rem;
-    float: right;
+  
     justify-content: center;
-    padding-right: 7%;
+  
    
    
 }
