@@ -344,9 +344,6 @@ max-width: 50vw;
       
         
        
-        #content{
-          height:800px;
-        }
         .aboutflex{
           max-width: 60vw;
         }
@@ -369,20 +366,16 @@ max-width: 50vw;
             
         }
         @media screen and (max-width: 600px) {
-             #content{margin-top: -15%;
-            }
+           
             .logo{padding:10px}
             html{
                 font-size: 12px;
             }
             
       
-          #content{
-           height:700px;
-          }
+    
           .message{
             max-width: 60vw;
-       
       }
 
        
