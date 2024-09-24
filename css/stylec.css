@@ -180,6 +180,7 @@ border-radius: 0px 0px 0px 50px;
     font-weight: bold;
 }
 .c1{
+	border-radius:8px;
     display: block;
     width:50vw;
     height:70px;
@@ -192,6 +193,7 @@ border-radius: 0px 0px 0px 50px;
 }
 
 .c2{
+	border-radius:8px;
     display: block;
     width:50vw;
     height:390px;
