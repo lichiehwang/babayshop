@@ -696,7 +696,7 @@
     content: "";
     width: 40px;
     height: 40px;
-    border: 1.5px solid #62300C;   /* 好みで色を変えてください */  
+    border: 2px solid #62300C;   /* 好みで色を変えてください */  
     border-radius: 50%;
    
     z-index: 1;
