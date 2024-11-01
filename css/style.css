@@ -1080,7 +1080,7 @@
   .modal-close{
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 40px;
     text-decoration: none;
   }
   
@@ -1145,7 +1145,7 @@
   .modal-close2{
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 40px;
     text-decoration: none;
   }
   
@@ -1211,7 +1211,7 @@
   .modal-close3{
     position: fixed;
     top: 20px;
-    right: 20px;
+    right: 40px;
     text-decoration: none;
   }
   
