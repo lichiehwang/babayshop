@@ -182,7 +182,7 @@ font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans
     letter-spacing: 0.05rem;
     text-decoration: none;
     width: 200px;
-   
+     margin-top: 24px;
     padding: 0.5rem 1rem;
     font-weight: bold;
     border: 1px solid #62300C;
