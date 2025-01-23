@@ -133,6 +133,7 @@ html{
   }
   
   nav.globalMenuSp ul li {
+        border-radius: 15px;
     font-family:"游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 0.9rem;
     list-style-type: none;
@@ -150,7 +151,7 @@ nav.globalMenuSp ul li:hover{
   }
   
   nav.globalMenuSp ul li a {
-    border-radius: 15px;
+  
     display: block;
     color: #fff;
     padding: 1.5em 1em;
