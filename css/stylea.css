@@ -67,6 +67,7 @@ max-width: 15vw;
     
   }
   .hamburger span {
+       border-radius: 2px;
     display : block;
     position: absolute;
     width   : 30px;
