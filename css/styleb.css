@@ -145,15 +145,15 @@ html{
   nav.globalMenuSp ul li:last-child {
     padding-bottom: 0;
   }
-  nav.globalMenuSp ul li:hover{
-    background :#DEB283;
-   
+nav.globalMenuSp ul li:hover{
+    background :rgba(221,178,131,0.5);
   }
   
   nav.globalMenuSp ul li a {
+    border-radius: 15px;
     display: block;
     color: #fff;
-    padding: 1.5em 0;
+    padding: 1.5em 1em;
     text-decoration :none;
   }
   
