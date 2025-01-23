@@ -1220,17 +1220,14 @@
     text-decoration: none;
   }
   .modal-contents::-webkit-scrollbar {
- height: 2px;
+ display:none;
 }
 
-.modal-contents::-webkit-scrollbar-track {
-      background-color: #F8E9E1;
-      border-radius: 10px;
-      margin: 20px 130px;
-    }
-.modal-contents::-webkit-scrollbar-thumb{
-      border-radius: 10px;
-      background-color:#dd8f69;
-    }
+ .modal-contents2::-webkit-scrollbar {
+ display:none;
+}
+ .modal-contents3::-webkit-scrollbar {
+ display:none;
+}
 
   
