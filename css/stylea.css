@@ -15,7 +15,7 @@ html{
 /* header */
 #header{
     position:relative;
-    background-image: url(../img/aboutheader.svg);
+    background-image: url(../img/blogheader.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
