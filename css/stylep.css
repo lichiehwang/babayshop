@@ -289,12 +289,12 @@ padding-bottom: 15%;}
         display: block;
         font-weight: bold;
         color: #DD8F69;
-        border-radius: 5px 5px 0px 0px;
+        border-radius: 8px 8px 0px 0px;
        text-align: center;
     }
     
     .accordion .content {
-        border-radius: 0px 0px 5px 5px;
+        border-radius: 0px 0px 8px 8px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
@@ -336,12 +336,12 @@ padding-bottom: 15%;}
         display: block;
         font-weight: bold;
         color: #DEB283;
-        border-radius: 5px 5px 0px 0px;
+        border-radius: 8px 8px 0px 0px;
        text-align: center;
     }
     
     .accordion2 .content2 {
-        border-radius: 0px 0px 5px 5px;
+        border-radius: 0px 0px 8px 8px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
@@ -383,12 +383,12 @@ padding-bottom: 15%;}
         display: block;
         font-weight: bold;
         color: #62300C;
-        border-radius: 5px 5px 0px 0px;
+        border-radius: 8px 8px 0px 0px;
        text-align: center;
     }
     
     .accordion3 .content3 {
-        border-radius: 0px 0px 5px 5px;
+        border-radius: 0px 0px 8px 8px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
